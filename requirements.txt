@@ -1,11 +1,14 @@
 # F1 AI Race Director - Dependencies
 
 # Core ML/CV
-ultralytics==8.0.196
-torch>=2.0.0
-torchvision>=0.15.0
+#ultralytics==8.0.196
+#torch>=2.0.0
+#torchvision>=0.15.0
 opencv-python>=4.8.0
 pillow>=10.0.0
+torch==2.4.1
+torchvision==0.19.1
+ultralytics==8.2.0
 
 # Dashboard
 streamlit>=1.28.0
