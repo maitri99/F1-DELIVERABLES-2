@@ -1,0 +1,119 @@
+🏎️ F1 AI RACE DIRECTOR - QUICKSTART GUIDE
+==========================================
+
+⚡ GET RUNNING IN 5 MINUTES!
+============================
+
+STEP 1: DOWNLOAD & EXTRACT
+---------------------------
+Unzip the F1_DAY_1 folder to your computer
+Open terminal/command prompt in that folder
+
+
+STEP 2: CREATE VIRTUAL ENVIRONMENT
+-----------------------------------
+📌 Linux/Mac:
+    python3 -m venv f1_env
+    source f1_env/bin/activate
+
+📌 Windows:
+    python -m venv f1_env
+    f1_env\Scripts\activate
+
+✅ You should see (f1_env) in your terminal
+
+
+STEP 3: INSTALL PACKAGES
+-------------------------
+    pip install -r requirements.txt
+
+⏱️ Wait 3-5 minutes for installation
+
+
+STEP 4: RUN DASHBOARD
+----------------------
+    streamlit run code/ultimate_dashboard.py
+
+🎉 Browser opens automatically at: http://localhost:8501
+
+
+THAT'S IT! YOU'RE DONE!
+=======================
+
+
+📖 USING THE DASHBOARD:
+========================
+
+1. Go to "🎯 Live Predictor" tab
+2. Click "Browse files"
+3. Upload an F1 race image
+4. Click "Predict Penalty"
+5. See which car violated the rules!
+
+
+🧪 TEST WITH SAMPLE IMAGES:
+===========================
+    Sample images are in: data/sample_images/
+    Upload any of them to test the system!
+
+
+📹 TEST WITH VIDEO:
+===================
+    python code/video_inference.py --video path/to/your/video.mp4
+
+
+❌ TROUBLESHOOTING:
+===================
+
+Problem: "Module not found"
+Solution: pip install -r requirements.txt
+
+Problem: Dashboard won't start
+Solution: Try a different port:
+    streamlit run code/ultimate_dashboard.py --server.port 8502
+
+Problem: Out of memory
+Solution: Works on CPU! Just slower.
+
+
+📊 WHAT YOU'LL SEE:
+===================
+✅ Real-time F1 violation detection
+✅ Which car committed the violation
+✅ Penalty type (5-sec, 10-sec, grid penalty, etc.)
+✅ Confidence scores
+✅ Beautiful visualizations
+
+
+🎯 QUICK COMMANDS:
+==================
+Run Dashboard:    streamlit run code/ultimate_dashboard.py
+Test Image:       python code/inference.py
+Test Video:       python code/video_inference.py --video VIDEO_FILE
+Train Model:      python code/train_yolov8.py
+Exit Env:         deactivate
+
+
+📁 IMPORTANT FILES:
+===================
+code/ultimate_dashboard.py  ← Main dashboard
+model/best.pt              ← Trained AI model
+data/sample_images/        ← Test images
+requirements.txt           ← Dependencies
+
+
+💡 PRO TIPS:
+============
+• GPU makes it faster, but CPU works fine!
+• Close browser? Just go to http://localhost:8501
+• Stop dashboard? Press Ctrl+C in terminal
+• Want to restart? Re-run: streamlit run code/ultimate_dashboard.py
+
+
+🆘 NEED HELP?
+=============
+Read full guide: COMPLETE_SETUP_GUIDE.md
+Or check: docs/QUICK_START.md
+
+
+🎊 ENJOY DETECTING F1 PENALTIES WITH AI! 🏁
