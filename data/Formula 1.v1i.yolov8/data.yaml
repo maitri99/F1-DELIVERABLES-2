@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 2
+names: ['Non-penalty', 'Penalty']
+
+roboflow:
+  workspace: aio-project
+  project: formula-1-dkxin
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/aio-project/formula-1-dkxin/dataset/1
